@@ -19,6 +19,7 @@ w = ((x.T*x).I)*(x.T)*y
 w = w.tolist()
 y_predict = []
 y_test = []
+print("z=" + str(w[0][0]) + "+" + str(w[1][0]) +  "*x+" + str(w[2][0]) + "*y")
 for index,row in df.iterrows():
     y_test.append(row['Decomposition rate 22'])
     x = row['my_tolerance']
